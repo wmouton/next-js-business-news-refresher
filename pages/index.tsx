@@ -6,7 +6,7 @@ import styles from '../styles/Home.module.css'
 const Home: NextPage = () => {
   return (
     <>
-      <div>Welcome to Business news</div>
+      <div>Welcome to Business News</div>
       <div className={styles.container}>
         <Head>
           <title>Business News</title>
