@@ -1,4 +1,5 @@
 import React, { FC, ReactNode } from 'react'
+import Nav from './Nav'
 import styles from '../styles/Layout.module.css'
 
 type childrenProps = {
@@ -7,11 +8,14 @@ type childrenProps = {
 
 const layout: FC<childrenProps> = ({ children }) => {
     return (
-        <div className={styles.container}>
-            <main className={styles.main}>
-                {children}
-            </main>
-        </div>
+        <>
+            <Nav />
+            <div className={styles.container}>
+                <main className={styles.main}>
+                    {children}
+                </main>
+            </div>
+        </>
     )
 }
 
