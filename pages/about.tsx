@@ -1,6 +1,6 @@
-import React from 'react'
+import React, { FC } from 'react'
 
-const about = () => {
+const about: FC = () => {
     return (
         <div>About Business News</div>
     )
