@@ -1,7 +1,8 @@
+import React, { FC } from 'react'
 import Link from 'next/link'
 import navStyles from '../styles/Nav.module.css'
 
-const Nav = () => {
+const Nav: FC = () => {
   return (
     <nav className={navStyles.nav}>
         <ul>

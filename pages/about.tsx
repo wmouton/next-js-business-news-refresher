@@ -1,9 +1,12 @@
 import React, { FC } from 'react'
+import aboutStyles from '../styles/About.module.css'
 
-const about: FC = () => {
+const About: FC = () => {
     return (
-        <div>About Business News</div>
+        <div>
+            <p className={aboutStyles.description}>Stay up to date with all things entrepreneurial.</p>
+        </div>
     )
 }
 
-export default about
+export default About
