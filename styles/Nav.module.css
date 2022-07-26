@@ -16,5 +16,13 @@
 }
 
 .nav ul li a {
-    margin: 5px 15px;
+    margin: 5px 10px;
+}
+
+
+.navImg {
+    width: 80px !important;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
