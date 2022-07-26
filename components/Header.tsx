@@ -2,7 +2,6 @@ import React, { FC } from 'react'
 import Image from 'next/image'
 import headerStyles from '../styles/Header.module.css'
 import logo from '../public/next.svg'
-import About from '../pages/about'
 
 const Header: FC = () => {
 	return (

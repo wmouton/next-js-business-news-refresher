@@ -2,7 +2,6 @@ import React, { FC, ReactNode } from 'react'
 import Nav from './Nav'
 import styles from '../styles/Layout.module.css'
 import Header from './Header'
-import About from '../pages/about'
 
 type childrenProps = {
     children: ReactNode
