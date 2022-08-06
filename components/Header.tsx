@@ -1,9 +1,9 @@
-import React, { FC } from 'react'
 import Image from 'next/image'
 import headerStyles from '../styles/Header.module.css'
 import logo from '../public/next.svg'
+import { NextPage } from 'next'
 
-const Header: FC = () => {
+const Header: NextPage = () => {
 	return (
 		<div>
 			<h1 className={headerStyles.title}>
