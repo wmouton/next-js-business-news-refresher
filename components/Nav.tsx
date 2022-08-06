@@ -1,10 +1,10 @@
-import React, { FC } from 'react'
 import Link from 'next/link'
 import navStyles from '../styles/Nav.module.css'
 import Image from 'next/image'
 import navLogo from '../public/next.svg'
+import { NextPage } from 'next'
 
-const Nav: FC = () => {
+const Nav: NextPage = () => {
   return (
     <>
       <nav className={navStyles.nav}>

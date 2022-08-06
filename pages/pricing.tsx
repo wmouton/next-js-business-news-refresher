@@ -1,6 +1,6 @@
-import React, { FC } from 'react'
+import { NextPage } from 'next'
 
-const pricing: FC = () => {
+const pricing: NextPage = () => {
   return (
     <div>
         <p>Pricing for business news coming soon...</p>
