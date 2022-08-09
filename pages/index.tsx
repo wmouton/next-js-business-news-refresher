@@ -2,7 +2,19 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import styles from '../styles/Layout.module.css'
 
-const Home: NextPage = () => {
+export const getStaticProps = async () => {
+  const response = await fetch(`https://jsonplaceholder.typicode.com/posts?_limit=7`);
+  const articles = await response.json();
+
+  return {
+    props: {
+      articles
+    }
+  }
+}
+
+const Home: NextPage = ({articles}) => {
+  console.log(articles);
   return (
     <>
       <div>Welcome to Business News</div>
