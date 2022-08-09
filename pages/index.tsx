@@ -14,7 +14,7 @@ export const getStaticProps = async () => {
 }
 
 const Home: NextPage = ({articles}) => {
-  console.log(articles);
+  
   return (
     <>
       <div>Welcome to Business News</div>
@@ -24,6 +24,8 @@ const Home: NextPage = ({articles}) => {
           <meta name="description" content="Business news for entrepreneurs." />
           <link rel="icon" href="/favicon.ico" />
         </Head>
+
+        {articles.map((article) => <h4>{article.title}</h4>)}
       </div>
     </>
   )
