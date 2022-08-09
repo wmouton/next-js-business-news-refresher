@@ -1,9 +1,13 @@
+import { NextPage } from 'next';
 import articleStyles from '../styles/Article.module.css'
+import ArticleItem from './ArticleItem'
 
-const ArticleList = ({ articles }) => {
+const ArticleList: NextPage = ({ articles }) => {
   return (
     <div className={articleStyles.grid}>
-      {articles.map((article) => <h4>{article.title}</h4>)}
+      {articles.map((article: string) => (
+        <ArticleItem key={articles.id} article={article} />
+      ))}
     </div>
   )
 }

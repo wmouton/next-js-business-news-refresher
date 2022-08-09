@@ -25,7 +25,7 @@ const Home: NextPage = ({articles}) => {
           <meta name="description" content="Business news for entrepreneurs." />
           <link rel="icon" href="/favicon.ico" />
         </Head>
-        <ArticleList articles={articles} />
+        <ArticleList key={articles.id} articles={articles} />
       </div>
     </>
   )
