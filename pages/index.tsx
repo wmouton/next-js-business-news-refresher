@@ -1,5 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
+import ArticleList from '../components/ArticleList';
 import styles from '../styles/Layout.module.css'
 
 export const getStaticProps = async () => {
@@ -24,8 +25,7 @@ const Home: NextPage = ({articles}) => {
           <meta name="description" content="Business news for entrepreneurs." />
           <link rel="icon" href="/favicon.ico" />
         </Head>
-
-        {articles.map((article) => <h4>{article.title}</h4>)}
+        <ArticleList articles={articles} />
       </div>
     </>
   )
